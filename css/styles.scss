@@ -1,0 +1,38 @@
+@import "compass";
+
+// Variables
+$serif: 'Lora', serif;
+$sans-serif: 'Arimo', sans-serif;
+
+$s-min: 20;
+$s-max: 70;
+$l-min: 30;
+$l-max: 90;
+
+// Colors
+
+
+// Super Simple Reset
+body{ font-size: 125%; margin: 0; padding: 0; }
+h1, p{ margin: 0; padding: 0; }
+
+// Base Typography
+h1, h2{ font-family: $serif; }
+h1{ font-size: 2em; }
+h2{ font-size: 1.5em; }
+p{ font-size: .75em; font-family: $sans-serif; }
+
+// Mixins
+@mixin bp($point) {
+	@media (min-width: $point)  { @content; }
+}
+
+    
+
+// Page Sections
+.intro{ padding: 2rem; text-align: center; background-color: hsl(random(360),$s-min+random($s-max+-$s-min),$l-min+random($l-max+-$l-min));
+	
+}
+
+// Section 1
+.section-1{  }
