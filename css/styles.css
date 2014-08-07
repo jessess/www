@@ -1,83 +1,63 @@
-/*
-Syntax error: $hue: "random(360)" is not a number for `hsl'
-        on line 33 of /Users/Dan/Git/danielcgold.github.io/css/styles.scss
+@font-face {
+  font-family: 'social';
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype"), url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAVsAAoAAAAABSQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAeoAAAHq9WCt1U9TLzIAAALgAAAAYAAAAGAIIvy3Y21hcAAAA0AAAABMAAAATBpVzFhnYXNwAAADjAAAAAgAAAAIAAAAEGhlYWQAAAOUAAAANgAAADYBMFpBaGhlYQAAA8wAAAAkAAAAJAPiAedobXR4AAAD8AAAABgAAAAYBQAAAG1heHAAAAQIAAAABgAAAAYABlAAbmFtZQAABBAAAAE8AAABPOS0jjpwb3N0AAAFTAAAACAAAAAgAAMAAAEABAQAAQEBB3NvY2lhbAABAgABADr4HAL4GwP4GAQeCgAZU/+Lix4KABlT/4uLDAeLa/iU+HQFHQAAAHkPHQAAAH4RHQAAAAkdAAAB4RIABwEBBw0PERQZHnNvY2lhbHNvY2lhbHUwdTF1MjB1RTYwMHVFNjAxAAACAYkABAAGAgABAAQABwAKAA0AyQFT/JQO/JQO/JQO+5QO+D/4dBX76osFXItlZYtcCIv76gWLXLFluosI9+qLBbqLsbGLugiL9+oFi7plsVyLCPub+3QV90yLBY+BjYCLgItVX2BVi1WLYLaLwYuWjJaPlQj3sIsVi/tUBYt5fX15iwj71IsFeYt9mYudCIv3VL2LBYmBioCLgIs7zErbi9uLzcyL24uWiZaJlQi9iwWL9wQVi4KEhIKLCGuLBYKLhJKLlAiLqwWLlJKSlIsIq4sFlIuShIuCCItrBQ74lPgTFXiCd4Z2iKCYnKCTo3d/dINzhnifcJhsi1GLXFyLUYuDjIONgzSPPbVYy4J7hXmLeAiLZ55qp3l6i3uQfZOLiouLi4qLWa9gu4GCiYKKgYuEi4WLhI2ZYbJsuYtnbl17WosIg4uCi4OMuW3DesaL91WL9fc0i/cfi4+LkIuPn5qdnpmgCA74lBT4lBWLDAoAAAADAgABkAAFAAABTAFmAAAARwFMAWYAAAD1ABkAhAAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAEAAAOYBAeD/4P/gAeAAIAAAAAEAAAAAAAAAAAAAACAAAAAAAAIAAAADAAAAFAADAAEAAAAUAAQAOAAAAAoACAACAAIAAQAg5gH//f//AAAAAAAg5gD//f//AAH/4xoEAAMAAQAAAAAAAAAAAAAAAQAB//8ADwABAAAAAQAAciX0cV8PPPUACwIAAAAAANAIjMIAAAAA0AiMwgAA/+ACAAHgAAAACAACAAAAAAAAAAEAAAHg/+AAAAIAAAAAAAIAAAEAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAQAAAAIAAAACAAAAAABQAAAGAAAAAAAOAK4AAQAAAAAAAQAMAAAAAQAAAAAAAgAOAEAAAQAAAAAAAwAMACIAAQAAAAAABAAMAE4AAQAAAAAABQAWAAwAAQAAAAAABgAGAC4AAQAAAAAACgA0AFoAAwABBAkAAQAMAAAAAwABBAkAAgAOAEAAAwABBAkAAwAMACIAAwABBAkABAAMAE4AAwABBAkABQAWAAwAAwABBAkABgAMADQAAwABBAkACgA0AFoAcwBvAGMAaQBhAGwAVgBlAHIAcwBpAG8AbgAgADEALgAwAHMAbwBjAGkAYQBsc29jaWFsAHMAbwBjAGkAYQBsAFIAZQBnAHUAbABhAHIAcwBvAGMAaQBhAGwARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-Backtrace:
-/Users/Dan/Git/danielcgold.github.io/css/styles.scss:33
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/script/funcall.rb:162:in `_perform'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/script/node.rb:40:in `perform'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:298:in `visit_prop'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/tree/root_node.rb:20:in `render'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/engine.rb:315:in `_render'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/sass-3.2.19/lib/sass/../sass/engine.rb:262:in `render'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `compile'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `compile'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `run'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `run'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Users/Dan/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/site_ruby/1.8/rubygems/core_ext/kernel_require.rb:55:in `to_proc'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `modified'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `run'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `run'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:87:in `perform'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/bin/compass:30
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/bin/compass:44:in `call'
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/gems/compass-0.12.6/bin/compass:44
-/Users/Dan/.rvm/rubies/ruby-1.8.7-p374/bin/compass:23:in `load'
-/Users/Dan/.rvm/rubies/ruby-1.8.7-p374/bin/compass:23
-/Users/Dan/.rvm/gems/ruby-1.8.7-p374@global/bin/ruby_executable_hooks:15
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: $hue: \"random(360)\" is not a number for `hsl'\A         on line 33 of /Users/Dan/Git/danielcgold.github.io/css/styles.scss"; }
+/* line 9, styles.scss */
+[class^="social-"], [class*=" social-"] {
+  font-family: 'social';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 23, styles.scss */
+.social-instagram:before {
+  content: "\e600";
+}
+
+/* line 24, styles.scss */
+.social-twitter:before {
+  content: "\e601";
+}
+
+/* line 29, styles.scss */
+body {
+  font-size: 125%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 30, styles.scss */
+.intro {
+  height: 102px;
+  position: absolute;
+  top: 50%;
+  margin-top: -51px;
+  width: 100%;
+}
+
+/* line 31, styles.scss */
+h1 {
+  font-family: "Lora", serif;
+  margin-top: 0;
+}
+
+/* line 32, styles.scss */
+a {
+  text-decoration: none;
+  color: gray;
+}
+/* line 33, styles.scss */
+a:hover {
+  color: black;
+}
