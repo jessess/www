@@ -3,19 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
- 
+
     <title>Dan Gold</title>
     <meta name="description" content="A NYC based Front End Engineer. @danielcgold">
-    
-    <link href="http://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet" type="text/css">
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+
+    <style>
+      @keyframes rainbow {
+        0% {
+          -webkit-filter: hue-rotate(0deg) saturate(0.5) brightness(390%) saturate(4);
+          filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
+        }
+        37.5% {
+          -webkit-filter: hue-rotate(90deg) saturate(0.5) brightness(90%) saturate(4);
+          filter: hue-rotate(90deg) saturate(0.5) brightness(90%) saturate(4);
+        }
+        62.5% {
+          -webkit-filter: hue-rotate(180deg) saturate(0.5) brightness(90%) saturate(4);
+          filter: hue-rotate(180deg) saturate(0.5) brightness(90%) saturate(4);
+        }
+        87.5% {
+          -webkit-filter: hue-rotate(270deg) saturate(0.5) brightness(90%) saturate(4);
+          filter: hue-rotate(270deg) saturate(0.5) brightness(90%) saturate(4);
+        }
+        100% {
+          -webkit-filter: hue-rotate(0deg) saturate(0.5) brightness(390%) saturate(4);
+          filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
+        }
+      }
+      body {
+        font-size: 125%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: table;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .intro {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      h1 {
+        font-family: Baskerville, serif;
+        margin: 0 0 10px;
+      }
+
+      a {
+        display: block;
+      }
+
+      .bird {
+        display: block;
+        width: 50px;
+        height: 41px;
+        margin: auto;
+        background-image: url(images/twitter-bird.svg);
+        animation: rainbow 60s infinite;
+      }
+
+      .mario {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+      }
+    </style>
 </head>
 <body>
 	<div class="intro">
 		<h1>Dan Gold.</h1>
-		<a class="social-twitter" href="https://twitter.com/danielcgold"></a>
-		<a class="social-instagram" href="http://instagram.com/danielcgold"></a>
+		<a class="twitter" href="https://twitter.com/danielcgold">
+      <span class="bird"></span>
+    </a>
 	</div>
+
+  <img class="mario" src="images/mario.gif">
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
