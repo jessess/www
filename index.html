@@ -10,26 +10,39 @@
     <style>
       @keyframes rainbow {
         0% {
-          -webkit-filter: hue-rotate(0deg) saturate(0.5) brightness(390%) saturate(4);
-          filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
+          -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
         }
         37.5% {
-          -webkit-filter: hue-rotate(90deg) saturate(0.5) brightness(90%) saturate(4);
-          filter: hue-rotate(90deg) saturate(0.5) brightness(90%) saturate(4);
+          -webkit-filter: hue-rotate(90deg);
+          filter: hue-rotate(90deg);
         }
         62.5% {
-          -webkit-filter: hue-rotate(180deg) saturate(0.5) brightness(90%) saturate(4);
-          filter: hue-rotate(180deg) saturate(0.5) brightness(90%) saturate(4);
+          -webkit-filter: hue-rotate(180deg);
+          filter: hue-rotate(180deg);
         }
         87.5% {
-          -webkit-filter: hue-rotate(270deg) saturate(0.5) brightness(90%) saturate(4);
-          filter: hue-rotate(270deg) saturate(0.5) brightness(90%) saturate(4);
+          -webkit-filter: hue-rotate(270deg);
+          filter: hue-rotate(270deg);
         }
         100% {
-          -webkit-filter: hue-rotate(0deg) saturate(0.5) brightness(390%) saturate(4);
-          filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
+          -webkit-filter: hue-rotate(360deg);
+          filter: hue-rotate(360deg);
         }
       }
+
+      @keyframes marioHover {
+        0% {
+          transform: translate(0px, 0px);
+        }
+        50% {
+          transform: translate(0px, 10px);
+        }
+        100% {
+          transform: translate(0px, 0px);
+        }
+      }
+
       body {
         font-size: 125%;
         margin: 0;
@@ -60,13 +73,39 @@
         height: 41px;
         margin: auto;
         background-image: url(images/twitter-bird.svg);
-        animation: rainbow 60s infinite;
+        -webkit-animation: rainbow 15s infinite;
+        animation: rainbow 15s infinite;
+      }
+
+      .mario-world {
+        width: 175px;
+        height: 95px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
       }
 
       .mario {
         position: absolute;
         bottom: 0;
+        left: 45px;
+      }
+
+      .pipe {
+        position: absolute;
+        width: 120px;
+        height: auto;
+        bottom: -152px;
         left: 20px;
+      }
+
+      .mario, .pipe {
+        -webkit-transition: transform .25s ease-in-out;
+        transition: transform .25s ease-in-out;
+      }
+
+      .mario-world:hover .mario, .mario-world:hover .pipe {
+        transform: translateY(-152px);
       }
     </style>
 </head>
@@ -78,7 +117,10 @@
     </a>
 	</div>
 
-  <img class="mario" src="images/mario.gif">
+  <div class="mario-world">
+    <img class="mario" src="images/mario.gif">
+    <img class="pipe" src="images/pipe.png">
+  <div>
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
