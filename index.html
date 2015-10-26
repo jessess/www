@@ -18,7 +18,6 @@
       margin: 0;
       padding: 0;
       font-weight: normal;
-      font-family: 'Open Sans', 'Vollkorn', 'Candal', 'Merriweather Sans', 'Alegreya Sans SC', 'Chivo', 'Bevan', 'Luckiest Guy', 'Paytone One', 'Changa One', 'Neuton', 'Khula', 'Work Sans', 'Press Start 2P', 'Alegreya SC', 'Lemon', 'Tienne', 'Biryani', 'Gorditas', 'Caveat', 'Itim', 'Sura', 'Asar', 'Sahitya', 'Rhodium Libre', 'Poppins', 'Eczar', 'Kurale', 'Roboto Mono', 'Jaldi', 'Lateef', 'Palanquin Dark', 'Ramabhadra', 'Dhurjati', 'Kalam' serif;
     }
 
     h1, p {
@@ -42,44 +41,51 @@
       }
     }
   </style>
+</head>
+<body>
+	<div class="intro">
+		<h1>Dan Gold.</h1>
+    <p>A NYC based Front End Engineer. Find me at @danielcgold basically everywhere. Also, pancakes? I hope they&rsquo;re paleo.</p>
+    <p class="ps">PS. Don't like that header font? Refresh the page for a new one.</p>
+	</div>
 
   <script>
-    var fontFamilies = [ 
+    var fontFamilies = [
       ['Open+Sans:400:latin', 'Open Sans'],
-      ['Vollkorn:400:latin', 'Vollkorn'], 
-      ['Candal::latin', 'Candal'], 
-      ['Merriweather+Sans:400:latin', 'Merriweather Sans'], 
-      ['Alegreya+Sans+SC:400:latin', 'Alegreya Sans SC'], 
-      ['Chivo:400:latin', 'Chivo'], 
-      ['Bevan::latin', 'Bevan'], 
-      ['Luckiest+Guy::latin', 'Luckiest Guy'], 
-      ['Paytone+One::latin', 'Paytone One'], 
-      ['Changa+One::latin', 'Changa One'], 
-      ['Neuton:400:latin', 'Neuton'], 
-      ['Khula:400:latin', 'Khula'], 
-      ['Work+Sans:400:latin', 'Work Sans'], 
-      ['Press+Start+2P::latin', 'Press Start 2P'], 
-      ['Alegreya+SC:400:latin', 'Alegreya SC'], 
-      ['Lemon::latin', 'Lemon'], 
-      ['Tienne:400:latin', 'Tienne'], 
-      ['Biryani:400:latin', 'Biryani'], 
+      ['Vollkorn:400:latin', 'Vollkorn'],
+      ['Candal::latin', 'Candal'],
+      ['Merriweather+Sans:400:latin', 'Merriweather Sans'],
+      ['Alegreya+Sans+SC:400:latin', 'Alegreya Sans SC'],
+      ['Chivo:400:latin', 'Chivo'],
+      ['Bevan::latin', 'Bevan'],
+      ['Luckiest+Guy::latin', 'Luckiest Guy'],
+      ['Paytone+One::latin', 'Paytone One'],
+      ['Changa+One::latin', 'Changa One'],
+      ['Neuton:400:latin', 'Neuton'],
+      ['Khula:400:latin', 'Khula'],
+      ['Work+Sans:400:latin', 'Work Sans'],
+      ['Press+Start+2P::latin', 'Press Start 2P'],
+      ['Alegreya+SC:400:latin', 'Alegreya SC'],
+      ['Lemon::latin', 'Lemon'],
+      ['Tienne:400:latin', 'Tienne'],
+      ['Biryani:400:latin', 'Biryani'],
       ['Gorditas:400:latin', 'Gorditas'],
-      ['Caveat::latin', 'xxx'], 
-      ['Itim::latin', 'xxx'], 
-      ['Sura::latin', 'xxx'], 
-      ['Asar::latin', 'xxx'], 
-      ['Sahitya::latin', 'xxx'], 
-      ['Rhodium+Libre::latin', 'xxx'], 
-      ['Poppins::latin', 'xxx'], 
-      ['Eczar::latin', 'xxx'], 
-      ['Kurale::latin', 'xxx'], 
-      ['Roboto+Mono::latin', 'xxx'], 
-      ['Jaldi::latin', 'xxx'], 
-      ['Lateef::latin', 'xxx'], 
-      ['Palanquin+Dark::latin', 'xxx'], 
-      ['Ramabhadra::latin', 'xxx'], 
-      ['Dhurjati::latin', 'xxx'], 
-      ['Kalam::latin', 'xxx']
+      ['Caveat::latin', 'Caveat'],
+      ['Itim::latin', 'Itim'],
+      ['Sura::latin', 'Sura'],
+      ['Asar::latin', 'Asar'],
+      ['Sahitya::latin', 'Sahitya'],
+      ['Rhodium+Libre::latin', 'Rhodium Libre'],
+      ['Poppins::latin', 'Poppins'],
+      ['Eczar::latin', 'Eczar'],
+      ['Kurale::latin', 'Kurale'],
+      ['Roboto+Mono::latin', 'Roboto Mono'],
+      ['Jaldi::latin', 'Jaldi'],
+      ['Lateef::latin', 'Lateef'],
+      ['Palanquin+Dark::latin', 'Palanquin Dark'],
+      ['Ramabhadra::latin', 'Ramabhadra'],
+      ['Dhurjati::latin', 'Dhurjati'],
+      ['Kalam::latin', 'Kalam']
     ]
 
     var fontFamily = fontFamilies[Math.floor(Math.random()*fontFamilies.length)];
@@ -97,16 +103,9 @@
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(wf, s);
     })();
-  </script>
-</head>
-<body>
-	<div class="intro">
-		<h1 id="h1">Dan Gold.</h1>
-    <p>A NYC based Front End Engineer. Find me at @danielcgold basically everywhere. Also, pancakes? I hope they&rsquo;re paleo.</p>
-    <p class="ps">PS. Don't like that header font? Refresh the page for a new one.</p>
-	</div>
 
-  <script>
+    document.getElementsByTagName("h1")[0].style.fontFamily = fontFamily[1];
+
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
