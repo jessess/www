@@ -11,6 +11,15 @@
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <style>
+    .wf-loading {
+      opacity: 0;
+    }
+
+    .wf-active, .wf-inactive {
+      opacity: 1;
+      transition: opacity .15s linear;
+    }
+
     body {
       font-size: 150%;
       margin: 0;
