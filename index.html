@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width">
 
   <title>Dan Gold</title>
-  <meta name="description" content="A NYC based Front End Engineer. @danielcgold. Pancakes?">
 
   <script src="https://use.typekit.net/nsd3fks.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -22,99 +21,30 @@
 
     body {
       font-size: 150%;
-      margin: 0;
-      font-family: "macho", sans-serif;
+      margin: 0 auto;
+      font-family: "freight-big-pro", sans-serif;
       line-height: 1.4;
+      padding: 60px;
+      max-width: 840px;
     }
 
-    body:after {
-      content: '';
-      display: block;
-      height: 0;
-      padding-bottom: 66.66667%;
-      background-image: url(trees-small.jpg);
-      background-size: cover;
-      background-position: center top;
-      margin-top: 30px;
-    }
-
-    h1 {
-      font-weight: 800;
-    }
-
-    p, ul {
-      font-weight: 200;
-    }
-
-    hgroup {
-      padding: 60px 30px;
-    }
-
-    hgroup h1 {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding: 0;
-    }
-
-    hgroup p {
-      margin: 30px 0 0;
-      padding: 0;
-    }
-
-    .update-label {
-      display: table;
-      background: #59c77f;
-      color: #fff;
-      padding: 5px 10px;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .status-text {
-      font-size: 18px;
-      text-transform: uppercase;
-    }
-
-    .about {
-      background: #369ff4;
-      padding: 60px 30px;
-      color: #fff;
-    }
-
-    .about p {
-      color: #f4f5f0;
-      max-width: 820px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .about a {
-      color: #f4f5f0;
+    h1, p, ul {
+      font-weight: 300;
     }
 
     ul {
       list-style: none;
-      margin: 5px 0 0;
+      margin: 0;
       padding: 0;
     }
 
-    li a {
-      display: table;
-      background: #52bf77;
-      color: #fff;
-      padding: 10px 30px;
+    a {
+      color: #59c77f;
       text-decoration: none;
     }
 
-    li a:hover {
-      background: #49af6c;
-    }
-
-    .thing {
-      color: rgba(255, 255, 255, .5);
-      display: inline-block;
-      margin-left: 15px;
+    a:hover {
+      color: #76db99;
     }
 
     .emoji {
@@ -122,30 +52,14 @@
       font-weight: normal;
     }
 
+    .status {
+      font-style: italic;
+      color: #999;
+    }
+
     @media (min-width: 760px) {
       body {
         font-size: 225%;
-      }
-
-      body:after {
-        background-image: url(trees-medium.jpg);
-      }
-
-      hgroup {
-        display: flex;
-      }
-
-      hgroup p {
-        margin-top: 0;
-      }
-
-      h1 {
-        margin-right: 40px;
-      }
-
-      .status {
-        position: relative;
-        top: 10px;
       }
     }
 
@@ -153,25 +67,18 @@
       body {
         font-size: 250%;
       }
-
-      body:after {
-        background-image: url(trees-large.jpg);
-      }
-
-      .update-label {
-        display: inline-block;
-      }
     }
   </style>
 </head>
 <body>
   <hgroup>
-		<h1>Dan Gold. <span class="emoji">👋</span></h1>
+		<h1>Dan Gold.</h1>
     <p class="status"><span class="update-label">Status update</span> <span class="status-text">Currently off of paleo.</span></p>
   </hgroup>
 
   <article class="about">
-    <p>I'm a frontend engineer <a href="http://www.charitywater.org/" target="_blank">@charitywater</a>. I like running, CrossFit, photography, and traveling.</p>
+    <p class="main-about">I&rsquo;m a frontend engineer <a href="http://www.charitywater.org/" target="_blank">@charitywater</a>. I like running, CrossFit, photography, and traveling. I am traveling on <a href="http://www.remoteyear.com/itinerary-darien" target="_blank">Remote Year</a> starting&nbsp;June&nbsp;1.</p>
+    <p class="secondary-about">I <span class="emoji">❤️</span> CSS.</p>
   </article>
 
   <ul>
