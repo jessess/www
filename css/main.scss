@@ -1,0 +1,82 @@
+---
+---
+
+.wf-loading {
+  opacity: 0;
+}
+
+.wf-active, .wf-inactive {
+  opacity: 1;
+  transition: opacity .15s linear;
+}
+
+body {
+  font-size: 150%;
+  margin: 0 auto;
+  font-family: "athelas", Georgia, serif;
+  line-height: 1.75;
+  padding: 30px;
+  max-width: 840px;
+}
+
+h1, h2, p, ul {
+  font-weight: 100;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #59c77f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #76db99;
+}
+
+.emoji {
+  font-family: "Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";
+  font-weight: normal;
+}
+
+@media (min-width: 760px) {
+  body {
+    font-size: 200%;
+    padding: 60px;
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    font-size: 225%;
+  }
+}
+
+
+/*************************************/
+/* Home                              */
+/*************************************/
+.home {
+  hgroup h1 {
+    margin: 0;
+  }
+
+  hgroup p {
+    margin-top: 0;
+  }
+
+  .status {
+    color: #999;
+  }
+}
+
+/*************************************/
+/* Post                              */
+/*************************************/
+.post-meta {
+  display: none;
+}
