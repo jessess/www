@@ -43,6 +43,10 @@ a:hover {
   font-weight: normal;
 }
 
+.post-title {
+  margin: 0;
+}
+
 @media (min-width: 760px) {
   body {
     font-size: 200%;
@@ -60,18 +64,8 @@ a:hover {
 /*************************************/
 /* Home                              */
 /*************************************/
-.home {
-  hgroup h1 {
-    margin: 0;
-  }
-
-  hgroup p {
-    margin-top: 0;
-  }
-
-  .status {
-    color: #999;
-  }
+.status {
+  color: #999;
 }
 
 /*************************************/
