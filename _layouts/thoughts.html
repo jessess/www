@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<nav class="top-nav">
+  <a href="/" class="home-link"><span class="emoji">⬅️</span> Dan Gold.</a>
+</nav>
+
+<article class="post">
+
+  <h1 class="post-title">Thoughts and stuff</h1>
+
+  <ul class="post-links">
+    {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</article>
