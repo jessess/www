@@ -1,6 +1,8 @@
 ---
 ---
 
+$link-color: #59c77f;
+
 .wf-loading {
   opacity: 0;
 }
@@ -23,19 +25,13 @@ h1, h2, p, ul {
   font-weight: 100;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 a {
-  color: #59c77f;
+  color: $link-color;
   text-decoration: none;
 }
 
 a:hover {
-  color: #76db99;
+  color: lighten($link-color, 15);
 }
 
 .emoji {
@@ -45,6 +41,20 @@ a:hover {
 
 .post-title {
   margin: 0;
+}
+
+.top-nav {
+  font-size: 25px;
+  position: relative;
+  margin-bottom: 30px;
+
+  a {
+    color: #999;
+
+    &:hover {
+      color: #aaa;
+    }
+  }
 }
 
 @media (min-width: 760px) {
