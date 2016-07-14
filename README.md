@@ -2,7 +2,7 @@ Gan Dold
 =====================
 
 ## Welcome to my homepage! 
-* This is my jekyll site.
+* This is my jekyll site
 * See my thoughts
 * I like emojis
 * I have some thoughts
