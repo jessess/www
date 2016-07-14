@@ -16,7 +16,7 @@ about an idea and instantly want to share it with everyone. But, because I haven
 give it enough time to settle, my execution wasn't 100%. Therefore, the feedback
 I receive also isn't 100%.
 
-Does "what if you tried that" or "oh this looks weird" or "this kinda looks like {this}" sounds familiar? Any maybe
+Does "what if you tried that" or "oh this looks weird" or "this kinda looks like {this}" sounds familiar? And maybe
 your response was "ah yes, I already thought about that" or "I will fix that in the next release" or "oh, I guess it does"?
 To prevent feedback that you already know, spend the time to execute properly and do your research.
 
