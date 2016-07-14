@@ -15,4 +15,3 @@ sass:
 # Plugins
 gems:
   - jekyll-sitemap
-  - octopress-minify-html
