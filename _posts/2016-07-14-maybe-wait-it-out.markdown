@@ -20,6 +20,6 @@ Does "what if you tried that" or "oh this looks weird" or "this kinda looks like
 your response was "ah yes, I already thought about that" or "I will fix that in the next release" or "oh, I guess it does"?
 To prevent feedback that you already know, spend the time to execute properly and do your research.
 
-This thought doesn't mean your proof of concept should be perfect and with all
+This thought doesn't mean your proof of concept should be perfect and be shipped with all
 the bells and whistles. It means it should be something that has thought, solves a
 valid problem, and is something that you would want to use yourself.
