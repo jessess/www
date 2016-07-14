@@ -2,7 +2,7 @@
 layout: post
 title: "Maybe wait it out?"
 permalink: "thoughts/maybe-wait-it-out"
-date: 2016-07-15 11:40:00 +0200
+date: 2016-07-14 11:40:00 +0200
 ---
 
 Ah yes, that's a great idea! Brb, let me immediately post it to facebook,
