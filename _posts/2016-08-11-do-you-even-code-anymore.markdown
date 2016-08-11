@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bro, do you even code?"
-permalink: "thoughts/traveling-vs-vacation"
+permalink: "thoughts/do-you-even-code-anymore"
 date: 2016-08-11 14:30:00 +0000
 ---
 
