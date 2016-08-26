@@ -10,7 +10,7 @@ I am traveling with <a href="http://www.remoteyear.com/" target="_blank">Remote 
 Remote Year brings together 75 people and facilitates co-working spaces and housing for a year of travel to 12 different cities. Here is our itinerary.
 
 * [Prague, Czech Republic](https://danielcgold.exposure.co/a-month-in-prague)
-* Belgrade, Serbia
+* [Belgrade, Serbia](https://danielcgold.exposure.co/serbia)
 * London, England
 * Lisbon, Portugal
 * Rabat, Morocco
