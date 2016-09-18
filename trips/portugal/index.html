@@ -1,0 +1,24 @@
+---
+layout: default
+title: Portugal in photos
+description: Portugal is an amazing country with a wide variety of landscapes and culture. Enjoy a snapshot of the southern half of Portugal in 228 photos.
+---
+
+<h1 class="post-title">Portugal</h1>
+<p>Portugal is an amazing country with a wide variety of landscapes and culture. This series of photos are taken within a big loop from Lisbon headed east, then to the south, then around the coast headed west, and lastly, back up to Lisbon.</p>
+<p>In these photos, you&rsquo;ll see the towns / beaches of Portalegre, Castelo de Vide, Évora, Beja, Serpa, Mértola, Unknown town in Spain, Faro, Praia de Falesia, Praia São Rafael, Benagil, Sagres &amp; Cape of São Vicente, Zambujera do Mar, Lagos, Vila Nova + many more.</p>
+
+<section id="portugal-images" class="portugal-image-gallery">
+  {% for image in site.static_files %}
+    {% if image.path contains 'images/portugal' %}
+      <img src="{{ site.baseurl }}{{ image.path }}">
+    {% endif %}
+  {% endfor %}
+</section>
+
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script>
+  imagesLoaded(document.querySelector('#portugal-images'), function() {
+    document.querySelector('body').className += ' portugal-images-loaded';
+  });
+</script>
