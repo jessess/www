@@ -16,9 +16,15 @@ description: Portugal is an amazing country with a wide variety of landscapes an
   {% endfor %}
 </section>
 
+<span id="ant-mode" class="portugal-ant-mode"><span class="emoji">🐜</span></span>
+
 <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 <script>
   imagesLoaded(document.querySelector('#portugal-images'), function() {
     document.querySelector('body').className += ' portugal-images-loaded';
   });
+
+  document.getElementById("ant-mode").onclick = function() {
+    document.querySelector('body').className += ' ant-mode';
+  };
 </script>

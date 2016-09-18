@@ -149,3 +149,36 @@ a:hover {
     height: auto;
   }
 }
+
+.ant-mode {
+  .portugal-image-gallery {
+    -moz-column-count: 8;
+    -webkit-column-count: 8;
+    column-count: 8;
+    -moz-column-gap: 0;
+    -webkit-column-gap: 0;
+    column-gap: 0;
+
+    img {
+      margin: 5px;
+    }
+  }
+}
+
+.portugal-ant-mode {
+  display: none;
+
+  @media (min-width: 960px) {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    opacity: .15;
+    cursor: pointer;
+    transition: opacity .25s linear;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
