@@ -7,7 +7,7 @@ date: 2016-07-01 10:00:00 +0200
 
 Have you ever woken up on a Thursday or a Tuesday and think to yourself:
 
-> Yes! It's Friday -- oh no, wait, it's actually not <span class="emoji">😞</span>.
+> Yes! It's Friday -- oh no, wait, it's actually not 😞.
 
 Yea, that's a pretty bad feeling, isn't it? So what if you can live in a world
 where that never happens because every day is a Friday.
@@ -28,4 +28,4 @@ a good thing to do and wanted to make a change.
 
 This is that change.
 
-Also, this was written on a Friday <span class="emoji">🤔</span>.
+Also, this was written on a Friday 🤔.
