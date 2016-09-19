@@ -1,18 +1,9 @@
 $link-color: #59c77f;
 
-.wf-loading {
-  opacity: 0;
-}
-
-.wf-active, .wf-inactive {
-  opacity: 1;
-  transition: opacity .15s linear;
-}
-
 body {
   font-size: 150%;
   margin: 0 auto;
-  font-family: "athelas", Georgia, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.75;
   padding: 30px;
   max-width: 840px;
