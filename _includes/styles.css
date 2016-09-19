@@ -7,7 +7,7 @@ body {
   max-width: 840px;
   color: #222;
   min-height: 100vh;
-  background: linear-gradient(transparent, #eff6fb), linear-gradient(to left, #ddfff9, transparent), linear-gradient(to right, #fbffed, transparent);
+  background: linear-gradient(transparent, #edfbf3),linear-gradient(to left, #edfff9, transparent),linear-gradient(to right, #fff6ec, transparent);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,7 +73,25 @@ blockquote {
 
 /*************************************/
 /* Home                              */
+/* Thanks http://codepen.io/akwright/pen/raBdOO! */
 /*************************************/
+$home-yellow: #add356;
+$home-teal: #00dfa6;
+$home-lorange: #ffcb52;
+$home-dorange: #ff451f;
+$home-blue: #3dade9;
+$home-purple: #bf2fcb;
+
+@mixin border-gradient($from, $to, $width) {
+  border-left: $width solid $from;
+  border-right: $width solid $to;
+  background-image: -webkit-linear-gradient(left, $from, $to), -webkit-linear-gradient(left, $from, $to);
+  background-size: 100% $width;
+  background-position: 0 100%, 0 0;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+}
+
 .status {
   font-size: 100%;
 }
@@ -85,8 +103,7 @@ blockquote {
 
 .home-thing {
   display: block;
-  border: solid 2px rgba(0, 0, 0, .05);
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 4px;
   text-align: center;
   width: calc(50% - 55px);
@@ -95,6 +112,30 @@ blockquote {
 
   &:nth-child(even) {
     margin-left: 20px;
+  }
+
+  &:nth-child(1) {
+    @include border-gradient($home-blue, $home-purple, 2px);
+  }
+
+  &:nth-child(2) {
+    @include border-gradient($home-purple, $home-teal, 2px);
+  }
+
+  &:nth-child(3) {
+    @include border-gradient($home-teal, $home-lorange, 2px);
+  }
+
+  &:nth-child(4) {
+    @include border-gradient($home-lorange, $home-yellow, 2px);
+  }
+
+  &:nth-child(5) {
+    @include border-gradient($home-yellow, $home-dorange, 2px);
+  }
+
+  &:nth-child(6) {
+    @include border-gradient($home-dorange, $home-purple, 2px);
   }
 
   p {
@@ -141,15 +182,15 @@ blockquote {
     display: block;
     margin-bottom: 20px;
     opacity: 0;
-    transition: opacity .25s .25s linear;
+    transition: opacity .35s .35s linear;
   }
 
   .portugal-image-gallery {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
-    background: #f8f8f8;
-    transition: background .25s linear;
+    background: #fff;
+    transition: all .25s linear;
     height: 300px;
     overflow: hidden;
     margin-top: 60px;
