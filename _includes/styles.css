@@ -86,21 +86,12 @@ $home-blue: #3dade9;
 $home-purple: #bf2fcb;
 
 @mixin border-gradient($from, $to) {
-  border-left: 2px solid $from;
-  border-right: 2px solid $to;
-  background-image: -webkit-linear-gradient(left, $from, $to), -webkit-linear-gradient(left, $from, $to);
-
   .svg-wrap {
-    border-color: $to;
+    background-image: linear-gradient(to left, $from, $to), linear-gradient(to left, $from, $to);
   }
 
-  &:hover {
-    border-color: $from;
-    background-size: 300% 2px;
-
-    .svg-wrap {
-      border-color: $from;
-    }
+  &:hover svg path {
+    fill: $to;
   }
 }
 
@@ -109,26 +100,26 @@ $home-purple: #bf2fcb;
 }
 
 .self-promotion {
-  display: flex;
-  flex-wrap: wrap;
+  margin-top: 60px;
+
+  @media (min-width: 640px) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-left: -30px;
+    margin-top: 30px;
+  }
 }
 
 .home-thing {
-  display: block;
-  padding: 30px 20px;
-  border-radius: 4px;
+  display: flex;
+  align-items: center;
   text-align: center;
-  width: calc(50% - 55px);
   margin-top: 20px;
-  font-size: 75%;
-  background-repeat: no-repeat;
-  background-clip: border-box;
-  background-position: 0 100%, 0 0;
-  background-size: 100% 2px;
-  transition: all .25s linear;
+  font-size: 70%;
 
-  &:nth-child(even) {
-    margin-left: 20px;
+  @media (min-width: 640px) {
+    display: block;
   }
 
   &:nth-child(1) {
@@ -160,41 +151,52 @@ $home-purple: #bf2fcb;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
 
     path {
       fill: #444;
+      transition: fill .15s linear;
     }
   }
 
   p {
-    margin-bottom: 0;
+    margin: 0;
+  }
+
+  @media (min-width: 480px) {
+
   }
 
   @media (min-width: 640px) {
-    width: calc(33% - 60px);
-    margin-right: 20px;
-
-    &:nth-child(even) {
-      margin-left: 0;
-    }
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+    flex: 1;
   }
 }
 
 .svg-wrap {
-  margin: auto;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   position: relative;
-  background: #fff;
   border-radius: 50%;
-  border: solid 2px;
-  transition: border-color .25s linear;
+  margin-right: 15px;
+
+  @media (min-width: 640px) {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 50%;
+    background: #fff;
+    top: 2px;
+    left: 2px;
+    position: absolute;
+  }
 }
 
 /*************************************/
