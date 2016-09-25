@@ -12,7 +12,7 @@ Remote Year brings together 75 people and facilitates co-working spaces and hous
 * [Prague, Czech Republic](https://danielcgold.exposure.co/a-month-in-prague)
 * [Belgrade, Serbia](https://danielcgold.exposure.co/serbia)
 * [London, England](https://danielcgold.exposure.co/england)
-* Lisbon, Portugal
+* [Lisbon, Portugal](https://danielcgold.exposure.co/portugal)
 * Rabat, Morocco
 * Valencia, Spain
 * Mexico City, Mexico
