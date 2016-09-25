@@ -95,8 +95,10 @@ $home-purple: #bf2fcb;
   }
 }
 
-.status {
-  font-size: 100%;
+.page-home {
+  .post-title {
+    font-size: 250%;
+  }
 }
 
 .self-promotion {
