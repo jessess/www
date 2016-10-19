@@ -1,6 +1,14 @@
 $link-color: #59c77f;
 $link-color-hover: #09bed4;
 
+html, body {
+  cursor: url(/assets/images/hamburger.png), auto;
+}
+
+a:hover {
+  cursor: url(/assets/images/poodle.png), auto;
+}
+
 body {
   font-size: 150%;
   margin: 0 auto;
