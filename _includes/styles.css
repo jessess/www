@@ -104,12 +104,13 @@ $home-purple: #bf2fcb;
 }
 
 .page-home {
-  background-image: url(https://source.unsplash.com/user/dangold/1000x563);
+  background-image: url(https://source.unsplash.com/user/dangold/960x1134);
   background-size: cover;
   color: rgba(255, 255, 255, .85);
   font-size: 125%;
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   position: relative;
+  background-position: center center;
 
   &:after {
     content: '';
@@ -123,8 +124,8 @@ $home-purple: #bf2fcb;
     z-index: -1;
   }
 
-  @media (min-width: 700px) {
-    background-image: url(https://source.unsplash.com/user/dangold/1440x810);
+  @media (min-width: 700) {
+    background-image: url(https://source.unsplash.com/user/dangold/1200x1200);
   }
 
   @media (min-width: 1000px) {
