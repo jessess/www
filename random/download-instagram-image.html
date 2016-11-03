@@ -18,7 +18,7 @@ permalink: /download-instagram-image
   var instagramID = location.search.split('id=')[1]
   if(instagramID) {
     $.ajax({
-      url: 'http://api.instagram.com/oembed?url=http://instagr.am/p/' + instagramID + '/',
+      url: 'https://api.instagram.com/oembed?url=http://instagr.am/p/' + instagramID + '/',
       type: "POST",
       dataType: 'jsonp'
     }).done(function(e) {
@@ -33,7 +33,7 @@ permalink: /download-instagram-image
     $('.new-stuff').remove();
 
     $.ajax({
-      url: 'http://api.instagram.com/oembed?url=http://instagr.am/p/' + $('.get-id').val() + '/',
+      url: 'https://api.instagram.com/oembed?url=http://instagr.am/p/' + $('.get-id').val() + '/',
       type: "POST",
       dataType: 'jsonp'
     }).done(function(e) {
