@@ -369,7 +369,7 @@ $home-purple: #bf2fcb;
 /*************************************/
 /* Instagram Tool                    */
 /*************************************/
-.download-instagram-image-by-url {
+.instagram-download {
   font-family: monospace;
 
   form {
