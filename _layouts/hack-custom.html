@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body class="{% if page.class %}page-{{ page.class }}{% endif %}{{ page.title | downcase | replace:' ','-' | replace:',','' | replace:'?','' | strip_html }}">
+    {{ content }}

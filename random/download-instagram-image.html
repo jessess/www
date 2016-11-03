@@ -1,0 +1,33 @@
+---
+layout: hack-custom
+title: Download instagram image by URL
+description: Input a URL and see your instagram picture with a link to download. No ads. No nothing. Just your photo.
+permalink: /download-instagram-image
+---
+
+<div class="page-content">
+  <h1 class="post-title">📷</h1>
+  <form>
+    <input class="get-id" type="text" required placeholder="Example Instagram ID: BL1HmjWjNE2">
+    <button class="get-image">Download</button>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script>
+  $('.get-image').on('click', function(e){
+    e.preventDefault();
+
+    $.ajax({
+      url: 'http://api.instagram.com/oembed?url=http://instagr.am/p/' + $('.get-id').val() + '/',
+      type: "POST",
+      dataType: 'jsonp'
+    }).done(function(e) {
+      $('<img class="generated-image" src="' + e.thumbnail_url.replace(/640/g, '1080') + '">').insertAfter('form');
+      $('<a class="download" href="' + e.thumbnail_url.replace(/640/g, '1080') + '" download>Download</a>').insertAfter('.generated-image');
+    });
+  });
+</script>
+
+</body>
+</html>
