@@ -197,7 +197,8 @@ $home-purple: #bf2fcb;
     @include border-gradient($home-dorange, $home-purple);
   }
 
-  svg {
+  svg,
+  .home-thing-emoji {
     position: absolute;
     top: 50%;
     left: 50%;
