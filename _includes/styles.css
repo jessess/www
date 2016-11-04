@@ -373,6 +373,18 @@ $home-purple: #bf2fcb;
 .download-a-single-instagram-image-by-url {
   font-family: monospace;
 
+  .post-title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .header-emoji {
+    display: block;
+    line-height: 1;
+    font-size: 50px;
+  }
+
   form {
     @media (min-width: 480px) {
       display: flex;
