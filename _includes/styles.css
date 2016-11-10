@@ -438,3 +438,69 @@ $home-purple: #bf2fcb;
     text-decoration: underline;
   }
 }
+
+/*************************************/
+/* Timezone                          */
+/*************************************/
+.timezone {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+
+  .post-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    font-size: 22px;
+
+    @media (min-width: 640px) {
+      top: 60px;
+      font-size: 35px;
+    }
+  }
+}
+
+.timezone-wrapper {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  color: rgba(0, 0, 0, .5);
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+  }
+}
+
+.timeblock {
+  flex: 1;
+  height: 33.33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 640px) {
+    height: 100vh;
+  }
+
+  span {
+    display: block;
+  }
+
+  &:nth-child(1) {
+    background: #6AD3F6;
+  }
+
+  &:nth-child(2) {
+    background: #f1e64e;
+  }
+
+  &:nth-child(3) {
+    background: #F38332;
+  }
+}
+
+.timezone-label {
+  font-size: 12px;
+}

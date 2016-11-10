@@ -1,0 +1,55 @@
+---
+layout: hack-custom
+title: Timezone
+description: These are the timezones that I am currently working in. This is better than googling "What time is it" 100 times per day.
+permalink: /timezone
+---
+
+<div class="page-content">
+  <h1 class="post-title"><span class="header-emoji">🕑</span></h1>
+
+  <div class="timezone-wrapper">
+    <div class="timeblock">
+      <span class="timezone-label">Current</span>
+      <span class="current"></span>
+    </div>
+
+    <div class="timeblock">
+      <span class="timezone-label">Eastern</span>
+      <span class="eastern"></span>
+    </div>
+
+    <div class="timeblock">
+      <span class="timezone-label">Pacific</span>
+      <span class="pacific"></span>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.9/moment-timezone.min.js"></script>
+<script>
+  var  current = null,
+       eastern = null,
+      pacific = null,
+          date = null;
+
+  var update = function () {
+    date = moment(new Date())
+    current.html(date.format('h:mm:ss a'));
+    eastern.html(date.utcOffset('-0500').format('h:mm:ss a'));
+    pacific.html(date.utcOffset('-0800').format('h:mm:ss a'));
+  };
+
+  $(function(){
+    current = $('.current');
+    eastern = $('.eastern');
+    pacific = $('.pacific');
+    update();
+    setInterval(update, 1000);
+  });
+</script>
+
+</body>
+</html>
