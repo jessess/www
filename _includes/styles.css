@@ -99,32 +99,34 @@ $home-purple: #bf2fcb;
     cursor: url(/assets/images/poodle.png), auto;
   }
 
-  background-image: url(https://source.unsplash.com/user/dangold/960x1134);
-  background-size: cover;
+  background: #000;
   color: rgba(255, 255, 255, .85);
   font-size: 125%;
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   position: relative;
-  background-position: center center;
 
   &:after {
     content: '';
     display: block;
     position: fixed;
+    z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .25);
-    z-index: -1;
-  }
+    background-image: url(https://images.unsplash.com/photo-1479378571359-c988006e0243?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=960&h=1134&fit=crop&s=f6766b3c49733c48884ebfc2f3373a60);
+    background-size: cover;
+    background-position: center center;
+    opacity: .5;
 
-  @media (min-width: 700) {
-    background-image: url(https://source.unsplash.com/user/dangold/1200x1200);
-  }
+    @media (min-width: 700) {
+      background-image: url(https://images.unsplash.com/photo-1479378571359-c988006e0243?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200&h=1200&fit=crop&s=f6766b3c49733c48884ebfc2f3373a60);
+    }
 
-  @media (min-width: 1000px) {
-    background-image: url(https://source.unsplash.com/user/dangold/1600x900);
+    @media (min-width: 1000px) {
+      background-image: url(https://images.unsplash.com/photo-1479378571359-c988006e0243?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=f6766b3c49733c48884ebfc2f3373a60);
+    }
+
   }
 
   .post-title {
