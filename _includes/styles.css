@@ -7,7 +7,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.75;
   padding: 30px;
-  max-width: 840px;
+  max-width: 850px;
   color: #222;
   min-height: 100vh;
 }
@@ -126,7 +126,6 @@ $home-purple: #bf2fcb;
     @media (min-width: 1000px) {
       background-image: url(https://images.unsplash.com/photo-1479378571359-c988006e0243?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=f6766b3c49733c48884ebfc2f3373a60);
     }
-
   }
 
   .post-title {
@@ -139,6 +138,19 @@ $home-purple: #bf2fcb;
 
     &:hover {
       color: #fff;
+    }
+  }
+
+  .hire-me {
+    text-decoration: none;
+    border: solid 1px;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 15px;
+
+    .emoji {
+      position: relative;
+      top: 3px;
     }
   }
 
