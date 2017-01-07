@@ -8,41 +8,13 @@ permalink: /instagram-download
 <div class="page-content">
   <h1 class="post-title"><span class="header-emoji">📷</span> Download single instagram photos</h1>
   <form>
-    <input class="get-id" type="text" required placeholder="Example Instagram ID: BL1HmjWjNE2">
-    <button class="get-image">Download</button>
+    <input class="get-id" type="text" required placeholder="Enter the instagram photo URL">
+    <button class="get-image">Start</button>
   </form>
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<script>
-  var instagramID = location.search.split('id=')[1]
-  if(instagramID) {
-    $.ajax({
-      url: 'https://api.instagram.com/oembed?url=http://instagr.am/p/' + instagramID + '/',
-      type: "POST",
-      dataType: 'jsonp'
-    }).done(function(e) {
-      $('<div class="new-stuff">').insertAfter('form');
-      $('.new-stuff').prepend('<img class="generated-image" src="' + e.thumbnail_url.replace(/640/g, '1080') + '">');
-      $('.new-stuff').append('<a class="download" href="' + e.thumbnail_url.replace(/640/g, '1080') + '" download>Download</a>');
-    });
-  }
-
-  $('.get-image').on('click', function(e){
-    e.preventDefault();
-    $('.new-stuff').remove();
-
-    $.ajax({
-      url: 'https://api.instagram.com/oembed?url=http://instagr.am/p/' + $('.get-id').val() + '/',
-      type: "POST",
-      dataType: 'jsonp'
-    }).done(function(e) {
-      $('<div class="new-stuff">').insertAfter('form');
-      $('.new-stuff').prepend('<img class="generated-image" src="' + e.thumbnail_url.replace(/640/g, '1080') + '">');
-      $('.new-stuff').append('<a class="download" href="' + e.thumbnail_url.replace(/640/g, '1080') + '" download>Download</a>');
-    });
-  });
-</script>
+<script src="/js/instagram-download.js"></script>
 
 </body>
 </html>
