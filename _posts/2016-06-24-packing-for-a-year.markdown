@@ -22,19 +22,19 @@ Here's my packing list and how I've done so far.
 
 ## Clothes & Accessories
 <p>5. 5 t-shirts <br /> <span class="note">Laundry is your friend.</span></p>
-<p>6. 4 pairs of ExOfficio's <br /> <span class="note">They never smell! Jk, they do, but it takes a lot.</span></p>
-<p>7. Flannel shirt <br /> <span class="note">Because sometimes sleeves are the way to go.</span></p>
+<p>6. 4 pairs of ExOfficio's <br /> <span class="note">They never smell! Jk, they do, but it takes a long time.</span></p>
+<p><span class="item-gone">7. Flannel shirt</span> <br /> <span class="note">Because sometimes sleeves are the way to go.</span></p>
 <p>8. Hoodie <br /> <span class="note">Works great as a base layer under the puffer.</span></p>
-<p>9. 2 pairs of pants <br /> <span class="note">1 pair of black and 1 pair of grey jeans.</span></p>
+<p>9. 1 pairs of pants <br /> <span class="note">When shorts don't make sense.</span></p>
 <p>10. Regular Shorts <br /> <span class="note">When it's too hot for pants.</span></p>
 <p>11. 3 light weight running shirts <br /> <span class="note">Because I run a lot and I have a limited amount of t-shirts.</span></p>
 <p>12. 3 pairs of mesh shorts <br /> <span class="note">2 for running and 1 for wearing around.</span></p>
 <p>13. Rain Coat <br /> <span class="note">It rains sometimes and I hate umbrellas.</span></p>
-<p><span class="item-gone">14. Puffer jacket</span> <br /> <span class="note">For colder climates, hikes, or night time.</span></p>
+<p>14. Puffer jacket <br /> <span class="note">For colder climates, hikes, or night time.</span></p>
 <p>15. Running shoes and Gym shoes <br /> <span class="note">For running! And for the gym!</span></p>
 <p>16. Timberland EarthKeepers <br /> <span class="note">These are great as rain boots, hiking, or every day boots. I wear them almost every day.</span></p>
 <p><span class="item-gone">17. Casual shoes that look good with shorts</span> <br /> <span class="note">Because the boots above look silly with shorts.</span></p>
-<p>18. 3 Pairs of sunglasses <br /> <span class="note">I like sunglasses, ok? Also, one is perscription 🤓.</span></p>
+<p>18. 2 Pairs of sunglasses <br /> <span class="note">I like sunglasses, ok? Also, one is perscription 🤓.</span></p>
 <p>19. Reading glasses <br /> <span class="note">Because I look at a computer screen a lot.</span></p>
 <p>20. Running belt <br /> <span class="note">For keeping things like keys, phone, and some money for longer runs.</span></p>
 <p>21. Regular belt <br /> <span class="note">Because my pants never fit right.</span></p>
@@ -42,7 +42,7 @@ Here's my packing list and how I've done so far.
 ## Electronics
 <p>22. Android 5x <br /> <span class="note">My everyday phone</span></p>
 <p>23. Unlocked iPhone 5s <br /> <span class="note">This actually broke and I probably won't replace it. But it's a good idea for a local data plan / tethering if needed.</span></p>
-<p>24. Amazon Fire Tablet <br /> <span class="note">For longer flights and bus rides.</span></p>
+<p><span class="item-gone">24. Amazon Fire Tablet</span> <br /> <span class="note">For longer flights and bus rides.</span></p>
 <p>25. 13" MBP <br /> <span class="note">For computing.</span></p>
 <p>26. 2 power banks <br /> <span class="note">For charging stuff. It's easier to charge your phone or camera with one of these when you have limited power outlets and converters.</span></p>
 <p><span class="item-gone">27. Running watch</span> <br /> <span class="note">For tracking pace and keeping time.</span></p>
