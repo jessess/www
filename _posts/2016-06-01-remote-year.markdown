@@ -26,7 +26,7 @@ I am coming into this with 0 expectations and an open mind.
 
 ### FAQ answers
 * I left New York after 3 years (bieeeeeee)
-* I kept my same job
+* ~~I kept my same job~~
 * I left my gym
 * I left the park slope food coop
 * I awkwardly had to get in front of my office and attempt to explain what I was doing
